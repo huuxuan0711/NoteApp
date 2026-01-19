@@ -250,7 +250,7 @@ public class GraphActivity extends BaseActivity {
             while (!queue.isEmpty()) {
                 int currentId = queue.poll();
                 int currentDepth = depthMap.get(currentId);
-                if (currentDepth >= 3) continue;
+                if (currentDepth >= 3) continue; //độ sâu tối đa là 3
 
                 for (NoteLink link : allLinks) {
                     if (link.getIdFrom() == currentId) {
